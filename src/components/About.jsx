@@ -1,9 +1,9 @@
 function About() {
   return (
     <section id="about" className="about">
-      <h2>About Me</h2>
+      <h2 className="text">About Me</h2>
 
-      <p>
+      <p className="description">
         I am passionate about crafting stories and building immersive worlds, 
         and bringing them to life through digital media. 
         I specialize in visual storytelling, animation, and video editing, 

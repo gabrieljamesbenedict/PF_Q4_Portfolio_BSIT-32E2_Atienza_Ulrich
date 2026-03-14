@@ -1,10 +1,10 @@
 function Contact() {
   return (
-    <section id="contact" className="contact">
-      <h2>Contact</h2>
+    <section id="contact" className="about">
+      <h2 className="text2">Contact</h2>
 
-      <p>Email: ulrich.atienza@gmail.com</p>
-      <p>GitHub: github.com/Ulrich-Atienza</p>      
+      <p className="text2">Email: ulrich.atienza@gmail.com</p>
+      <p className="text2">GitHub: github.com/Ulrich-Atienza</p>      
     </section>
   );
 }

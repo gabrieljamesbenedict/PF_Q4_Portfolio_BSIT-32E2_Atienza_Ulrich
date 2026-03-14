@@ -1,14 +1,14 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f4f4;
+  background: #93B1B5;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background: #222;
+  background: #0B2E33;
   color: white;
 }
 
@@ -21,7 +21,8 @@ body {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: white;
+  background: #4F7C82;
+  color: white;
 }
 
 .hero button {
@@ -33,14 +34,91 @@ section {
   padding: 60px 20px;
 }
 
+.about {
+  background: #B8E3E9;
+}
+.projects {
+  background: #A9D0D8;
+}
+
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;    
 }
 
 .project-card {
   background: white;
   padding: 20px;
   border-radius: 8px;
+}
+
+.text {
+  color: #0B2E33;
+  padding: 20px;
+}
+
+.text2 {
+  color: #0B2E33;
+}
+
+.description {
+  color: #0B2E33;
+  padding: 20px;
+  text-align: justify;
+  text-justify: inter-word; /* standard in most browsers */
+  margin-bottom: 1em;
+  line-height: 1.5; /* improves readability */
+}
+.section-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* Container around the image */
+.picture-wrapper {
+  width: 100%;             /* full width of the card */
+  max-width: 400px;        /* optional max width */
+  margin: 0 auto 15px;     /* center horizontally, add spacing below */
+  overflow: hidden;        /* hide overflow for rounded corners */
+  border-radius: 12px;     /* smooth rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for polish */
+.picture-wrapper:hover {
+  transform: scale(1.03);         /* slight zoom */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* The image itself */
+.picture-wrapper img {
+  width: 100%;       /* scale to container */
+  height: auto;      /* maintain aspect ratio */
+  display: block;    /* remove inline gaps */
+  object-fit: cover; /* cover container nicely */
+}
+
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
