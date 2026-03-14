@@ -3,8 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // BASE PATH:
-  // '/' → root domain
-  // '/repo-name/' → GitHub Pages repository
-  base: process.env.VITE_BASE_URL || '/', 
+  base: '/PF_Q4_Portfolio_BSIT-32E2_Atienza_Ulrich/',  // <-- GitHub repo name
 });
